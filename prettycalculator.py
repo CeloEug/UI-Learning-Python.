@@ -9,7 +9,6 @@ root.attributes('-alpha',0.9)
 root.overrideredirect(True)
 root.bind("<B1-Motion>", lambda e: event(e, Mode=True))
 root.bind("<ButtonRelease-1>", lambda e: standard_bind())
-#root.geometry("200x378")
 
 global x, y
 
