@@ -9,6 +9,7 @@ root.attributes('-alpha',0.9)
 root.overrideredirect(True)
 root.bind("<B1-Motion>", lambda e: event(e, Mode=True))
 root.bind("<ButtonRelease-1>", lambda e: standard_bind())
+#root.geometry("200x378")
 
 global x, y
 
@@ -140,18 +141,18 @@ button8 = customtkinter.CTkButton(root, text="8", hover_color="#ffc041", fg_colo
 button9 = customtkinter.CTkButton(root, text="9", hover_color="#ffc041", fg_color="#ffa500",width=50, height=50,command=lambda:when_click(9))
 
 ##operations
-buttonplus = customtkinter.CTkButton(root, width=50, height=50,text="+", fg_color="azure4", hover_color="azure3", command=button_add)
-buttonminus = customtkinter.CTkButton(root, width=50, height=50,text="-", fg_color="azure4", hover_color="azure3", command=button_sub)
-buttondiv = customtkinter.CTkButton(root, width=50, height=50,text="÷", fg_color="azure4", hover_color="azure3", command=button_div)
-buttonmul = customtkinter.CTkButton(root, width=50, height=50,text="×", fg_color="azure4", hover_color="azure3", command=button_mul)
-buttonper = customtkinter.CTkButton(root, width=50, height=50,text="⅟", fg_color="azure4", hover_color="azure3", command=button_per)
-buttonexp = customtkinter.CTkButton(root, width=50, height=50,text="xˣ", fg_color="azure4", hover_color="azure3", command=button_exp)
-buttonrad = customtkinter.CTkButton(root, width=50, height=50,text="√ˣ", fg_color="azure4", hover_color="azure3", command=button_rad)
+buttonplus = customtkinter.CTkButton(root, width=50, height=50,text="+", fg_color="#303030", hover_color="#404040", command=button_add)
+buttonminus = customtkinter.CTkButton(root, width=50, height=50,text="-", fg_color="#303030", hover_color="#404040", command=button_sub)
+buttondiv = customtkinter.CTkButton(root, width=50, height=50,text="÷", fg_color="#303030", hover_color="#404040", command=button_div)
+buttonmul = customtkinter.CTkButton(root, width=50, height=50,text="×", fg_color="#303030", hover_color="#404040", command=button_mul)
+buttonper = customtkinter.CTkButton(root, width=50, height=50,text="⅟", fg_color="#303030", hover_color="#404040", command=button_per)
+buttonexp = customtkinter.CTkButton(root, width=50, height=50,text="xˣ", fg_color="#303030", hover_color="#404040", command=button_exp)
+buttonrad = customtkinter.CTkButton(root, width=50, height=50,text="√ˣ", fg_color="#303030", hover_color="#404040", command=button_rad)
 
 ##functions
-buttonres = customtkinter.CTkButton(root, width=50, height=50,text="=", fg_color="#a22630", hover_color="#c63a4b", command=button_equal)
-buttonclear = customtkinter.CTkButton(root, width=50, height=50,text="↺", fg_color="azure4", hover_color="azure3", command=button_clear)
-buttonback = customtkinter.CTkButton(root, width=50, height=50,text=".", fg_color="azure4", hover_color="azure3", command=lambda:when_click("."))
+buttonres = customtkinter.CTkButton(root, width=50, height=50,text="=", fg_color="#a22630", hover_color="#b94040", command=button_equal)
+buttonclear = customtkinter.CTkButton(root, width=50, height=50,text="↺", fg_color="#303030", hover_color="#404040", command=button_clear)
+buttonback = customtkinter.CTkButton(root, width=50, height=50,text=".", fg_color="#303030", hover_color="#404040", command=lambda:when_click("."))
 buttonexit = customtkinter.CTkButton(root, corner_radius=0, width=40, height=25,text="✖", fg_color="#242424", hover_color="#a22630", command=stop_program)
 bardrag = customtkinter.CTkButton(root, corner_radius=0, width=25, height=25,text="☰", fg_color="#242424", hover_color="#242424")
 
